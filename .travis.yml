@@ -2,6 +2,13 @@ language: node_js
 node_js: node
 cache:
   directories:
-    - node_modules
+  - node_modules
 env:
-  - CI=true
+- CI=true
+deploy:
+  provider: heroku
+  api_key:
+    secure: lTZFMHSkqavrATUDxF1hYAG8oUOM+2Oy1GQBeb/1PergHvuDteJt7KecUMZMk71yKACh8IXg6NWAMpmKKxjz/77/887X1CKy+qO0+kvXlIK8oLTAcZF5B/rQfXxNrflxm3cqbT0HMGhu7cMwrJO1tkVIGgqyDRWQPhydsz1wabEWMLeLZVu4Va1757W8dfOcY6vTOHj6+JAoATwhygLc3OYjyAD2uY5xBdEZtdojpupuETFoi8bBl3PiqYvG3yJrBOo9OdVgwXqzwyGU1FDqIjnD07q84f8bOVtP8Lz5kuI6PfH2YPMcxfIer2Aw80O93lxcXk/cGWKl7DAb1qaR/XZl5+2nbeCOXQUDfx2lRltqHrBTPEpuZMKKpwHAksRpQ/qY2tebWfLqAXwiRIKGr5BNFUBV3QyqdMwM4NNCfZunHtuu7Z5aJlOHVhgTO9E3joHzfmP3S50G96kW5E9Y4B24E4cU2XLWA8A2IYAOZb7naosSWXUlayJxeoqtd7VtGXGhalTA44Zy7GvzOl3a0yKOv+5M8e40gr2drdW3jaIUQw9aztezTglwn7GwphlMI9Arh0lAh7JRio2VLGLnoRj5eTHHViEFODy/m7PsE5E4BMn8VSgNDsyhF1z5eTetGjKZCoKJJWjKabBu80x+QatKiIhBGz9EUlinJLezEvI=
+  app: floating-wildwood-61141
+  on:
+    repo: jmpainter/react-trello-testing
